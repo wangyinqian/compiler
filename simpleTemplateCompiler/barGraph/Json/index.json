@@ -1,0 +1,12 @@
+{
+    "layout":{"width":500,"height":500},
+    "yAxis":[0,100,200,300,400,500],
+    "content":[
+        {"name":"one","value":300,"space":0},
+        {"name":"two","value":200,"space":100},
+        {"name":"three","value":350,"space":200},
+        {"name":"four","value":400,"space":300},
+        {"name":"five","value":150,"space":400}
+    ]
+
+}

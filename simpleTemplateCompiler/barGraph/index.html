@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CircularGrapph</title>
+    <link rel = "stylesheet" href = "css/index.css"/>
+</head>
+<body>
+    <div class = "bar-graph" m:key m:style = "{layout}">
+        <div class = "bar-graph-x-arrow"></div>
+        <div class = "bar-graph-y-arrow">
+            <ul m:for = "item in yAxis">
+                <li>
+                    <p class = "y_line" m:style = "right:{item}px;"></p>
+                    <p class = "y_value" m:style = "left:{item}px;">{item}</p>
+                </li>
+            </ul>
+        </div>
+        <div class = "bar-graph-content">
+            <ul m:for = "item in content">
+                <li m:style = "height:{item.value}px;left:{item.space}px;"><p>{item.name}</p></li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/templatePaser.js"></script>
+</body>
+</html>
