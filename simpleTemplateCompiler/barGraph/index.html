@@ -24,7 +24,7 @@
             </ul>
         </div>
     </div>
-    <script src="../js/es6/templatePaser.js"></script>
+    <script src="../js/es6/templateParser.js"></script>
     <script>
         function getFile(path){ 
             return fetch(path,{method:"get"})
@@ -32,7 +32,7 @@
                    .catch(err=>console.log(err)); 
         }
 
-        getFile("Json/index.json").then(data=>data && new TemplatePaser(".bar-graph",JSON.parse(data)))
+        getFile("Json/index.json").then(data=>data && new TemplateParser(".bar-graph",JSON.parse(data)))
     </script>
 </body>
 </html>
